@@ -814,3 +814,34 @@ body {
   }
 
 }
+
+/* ------------------------------------------------ */
+/* PROJECT 02 / REVERSED */
+/* ------------------------------------------------ */
+
+.project-reverse {
+  margin-top: 160px;
+
+  grid-template-columns: 0.65fr 1.35fr;
+}
+
+.project-reverse .project-info {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 950px) {
+
+  .project-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .project-reverse .project-info {
+    order: 2;
+  }
+
+  .project-reverse .project-media {
+    order: 1;
+  }
+
+}
