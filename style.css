@@ -1717,3 +1717,532 @@ body {
   }
 
 }
+
+/* ================================================= */
+/* ABOUT */
+/* ================================================= */
+
+.about-section {
+  position: relative;
+
+  padding: 170px 6vw 50px;
+
+  background:
+    radial-gradient(
+      circle at 75% 30%,
+      rgba(119,227,255,0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(141,124,255,0.09),
+      transparent 30%
+    ),
+    #080a0e;
+
+  border-top: 1px solid var(--line);
+
+  overflow: hidden;
+}
+
+
+.about-grid {
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+
+/* ------------------------------------------------ */
+/* LEFT */
+/* ------------------------------------------------ */
+
+.about-copy h2 {
+  max-width: 850px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(55px, 6vw, 100px);
+
+  font-weight: 500;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+}
+
+
+.about-copy h2 span {
+  display: block;
+
+  color: #626d79;
+}
+
+
+.about-lead {
+  max-width: 700px;
+
+  margin-top: 40px;
+
+  color: #d3dae2;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+
+.about-text {
+  max-width: 690px;
+
+  margin-top: 25px;
+
+  color: #909ba7;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* ------------------------------------------------ */
+/* LINKS */
+/* ------------------------------------------------ */
+
+.about-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 40px;
+}
+
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  padding: 12px 17px;
+
+  border: 1px solid rgba(255,255,255,0.13);
+
+  border-radius: 999px;
+
+  color: #dfe5eb;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.about-button:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255,255,255,0.4);
+}
+
+
+.primary-link {
+  background: white;
+
+  color: #090b0f;
+
+  border-color: white;
+}
+
+
+/* ------------------------------------------------ */
+/* VISUAL */
+/* ------------------------------------------------ */
+
+.about-visual {
+  min-height: 650px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.about-orbit {
+  position: relative;
+
+  width: 430px;
+  height: 430px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-monogram {
+  position: relative;
+
+  z-index: 3;
+
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(119,227,255,0.3),
+      transparent 45%
+    ),
+    #10151c;
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+  box-shadow:
+    0 0 70px rgba(119,227,255,0.10);
+}
+
+
+.orbit-ring {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+
+.orbit-ring-one {
+  width: 290px;
+  height: 290px;
+
+  animation: orbitSpin 18s linear infinite;
+}
+
+
+.orbit-ring-two {
+  width: 410px;
+  height: 410px;
+
+  border-color: rgba(119,227,255,0.10);
+
+  animation: orbitSpin 28s linear infinite reverse;
+}
+
+
+.orbit-ring-one::after,
+.orbit-ring-two::after {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+  left: 50%;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+  box-shadow:
+    0 0 18px rgba(119,227,255,0.7);
+}
+
+
+@keyframes orbitSpin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* ------------------------------------------------ */
+/* FOCUS LABELS */
+/* ------------------------------------------------ */
+
+.about-focus {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  max-width: 480px;
+
+  margin-top: 20px;
+}
+
+
+.about-focus p {
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  color: #586574;
+
+  text-align: center;
+
+  font-size: 9px;
+
+  letter-spacing: 0.2em;
+}
+
+
+.about-focus span {
+  padding: 7px 10px;
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  border-radius: 999px;
+
+  color: #929da9;
+
+  font-size: 10px;
+}
+
+
+/* ================================================= */
+/* CONTACT */
+/* ================================================= */
+
+.contact-strip {
+  max-width: 1450px;
+
+  margin: 160px auto 0;
+
+  padding: 55px 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  border-top: 1px solid rgba(255,255,255,0.12);
+
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+
+.contact-label {
+  margin-bottom: 13px;
+
+  color: var(--accent);
+
+  font-size: 9px;
+
+  letter-spacing: 0.2em;
+}
+
+
+.contact-email {
+  display: flex;
+
+  gap: 30px;
+
+  align-items: center;
+
+  color: white;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(30px, 4vw, 64px);
+
+  letter-spacing: -0.04em;
+
+  text-decoration: none;
+}
+
+
+.contact-email span {
+  color: #687482;
+}
+
+
+.contact-side {
+  color: #697582;
+
+  font-size: 11px;
+
+  letter-spacing: 0.1em;
+}
+
+
+/* ================================================= */
+/* CLOSING NAME */
+/* ================================================= */
+
+.closing-name {
+  max-width: 1450px;
+
+  margin: 100px auto 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(70px, 12.5vw, 220px);
+
+  font-weight: 500;
+
+  line-height: 0.75;
+
+  letter-spacing: -0.075em;
+
+  color: #f1f4f7;
+
+  white-space: nowrap;
+}
+
+
+.closing-name span {
+  color: #333b45;
+}
+
+
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+.site-footer {
+  max-width: 1450px;
+
+  margin: 95px auto 0;
+
+  padding-top: 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(255,255,255,0.10);
+
+  color: #596471;
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+}
+
+
+.site-footer a {
+  color: #8c97a3;
+
+  text-decoration: none;
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 950px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .about-visual {
+    min-height: 500px;
+  }
+
+
+  .contact-strip {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+  }
+
+
+  .closing-name {
+    white-space: normal;
+
+    line-height: 0.85;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 110px 24px 40px;
+  }
+
+
+  .about-orbit {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .orbit-ring-one {
+    width: 220px;
+    height: 220px;
+  }
+
+
+  .orbit-ring-two {
+    width: 295px;
+    height: 295px;
+  }
+
+
+  .contact-email {
+    font-size: 28px;
+  }
+
+
+  .site-footer {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+}
