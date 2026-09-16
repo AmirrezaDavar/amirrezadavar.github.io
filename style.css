@@ -765,6 +765,20 @@ body {
   transition: .25s ease;
 }
 
+.project-links .coming-soon {
+  display: flex;
+
+  align-items: center;
+
+  padding-bottom: 6px;
+
+  color: #9bacbd;
+
+  border-bottom: 1px solid #2f3844;
+
+  font-size: 13px;
+}
+
 
 .project-links a:hover {
   border-color: white;
