@@ -1,7 +1,7 @@
 /* Site-specific presentation over the pinned al-folio theme. */
 :root {
-  --global-theme-color: #8d2738;
-  --global-hover-color: #681e2c;
+  --global-theme-color: #005cab;
+  --global-hover-color: #00417b;
   --global-text-color: #242b34;
   --global-text-color-light: #606975;
   --global-divider-color: #e3e5e7;
@@ -10,8 +10,8 @@
 html[data-theme="dark"] {
   --global-bg-color: #191c21;
   --global-card-bg-color: #20242b;
-  --global-theme-color: #f3a6b2;
-  --global-hover-color: #ffd0d8;
+  --global-theme-color: #9acbff;
+  --global-hover-color: #c7e2ff;
   --global-text-color: #e5e8ed;
   --global-text-color-light: #b2bac5;
   --global-divider-color: #3a4049;
@@ -159,8 +159,8 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
   #navbar .navbar-collapse-main { text-align: left; }
 }
 /* Classic al-folio presentation, matching the supplied reference. */
-:root { --global-theme-color: #af0ca6; --global-hover-color: #85077e; --global-text-color: #202124; --global-text-color-light: #565b63; }
-html[data-theme="dark"] { --global-theme-color: #f19be8; --global-hover-color: #ffc2f8; --global-text-color: #e5e8ed; --global-text-color-light: #b2bac5; }
+:root { --global-theme-color: #005cab; --global-hover-color: #00417b; --global-text-color: #202124; --global-text-color-light: #565b63; }
+html[data-theme="dark"] { --global-theme-color: #9acbff; --global-hover-color: #c7e2ff; --global-text-color: #e5e8ed; --global-text-color-light: #b2bac5; }
 body { font-family: Roboto, Arial, sans-serif; font-weight: 300; font-size: 16px; line-height: 1.55; }
 body.fixed-top-nav { padding-top: 54px; }
 #navbar { min-height: 54px; opacity: 1; }

@@ -8,7 +8,7 @@ Reviewed on 2026-09-24. These editorial notes are excluded from the deployed web
 - Prior public website at Git commit `7334ab8`: project descriptions, public email `adavar@uark.edu`, GitHub, LinkedIn and Google Scholar URLs, and research experience (University of Arkansas and summer 2025 at Purdue). Archived HTML lives under `docs/legacy-*`.
 - The CV preserves the prior public research experience descriptions without assigning an employment title or inferring the PhD start date. Education is stated only as PhD studies in progress.
 - Portrait: the public avatar returned by `https://api.github.com/users/AmirrezaDavar`, downloaded from `https://avatars.githubusercontent.com/u/125734691?v=4`. Saved unchanged in `assets/img/portrait.jpg`.
-- User-supplied design reference: classic al-folio homepage with biography, portrait, News, and Selected Publications. User explicitly requested their portrait on the left.
+- User-supplied design reference: classic al-folio homepage with biography, portrait, News, and Selected Publications. User explicitly requested their portrait on the left and blue accents instead of pink.
 
 ## Publications
 
