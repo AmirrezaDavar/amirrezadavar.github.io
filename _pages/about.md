@@ -27,7 +27,6 @@ latest_posts:
     <p>I work on imitation learning, diffusion policies, deformable-object manipulation, tactile sensing, and sim-to-real robotics. My work connects human demonstrations, multimodal observations, policy learning, simulation, and real robotic systems.</p>
     <p>My projects include <a href="{{ '/projects/chicgrasp/' | relative_url }}">ChicGrasp</a>, an imitation-learning system with a custom dual-jaw gripper for delicate, irregular objects, and <a href="{{ '/projects/chicken-manipulation/' | relative_url }}">learning-based manipulation in NVIDIA Isaac Lab</a>. I also coauthored research on <a href="{{ '/projects/contact-aware/' | relative_url }}">tactile feedback and deformable tool control</a>.</p>
     <p>In summer 2025, I worked on surgical robotics research at Purdue University, exploring learning from egocentric surgical video and transferring human demonstrations toward robotic execution.</p>
-    <p>For research conversations, collaborations, or internship inquiries, please <a href="mailto:{{ site.data.profile.email }}">get in touch</a>.</p>
   </div>
 </div>
 
