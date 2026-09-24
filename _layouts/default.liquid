@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+    <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url | bust_file_cache }}">
+  </head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include header.liquid %}
+    <main id="main-content" class="container mt-5" tabindex="-1">{{ content }}</main>
+    {% include footer.liquid %}
+    {% include scripts.liquid %}
+  </body>
+</html>

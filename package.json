@@ -1,0 +1,15 @@
+{
+  "name": "amirreza-davar-academic-website",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "lint:prettier": "prettier --check .",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@axe-core/playwright": "4.10.2",
+    "@shopify/prettier-plugin-liquid": "1.10.0",
+    "prettier": "3.8.0"
+  }
+}

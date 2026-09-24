@@ -1,0 +1,16 @@
+_site/
+_site_project/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+node_modules/
+.DS_Store
+.playwright/
+artifacts/
+test-results/
+playwright-report/
+.env*
+!.env.example
+al-folio-upgrade-report.md

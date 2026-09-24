@@ -1,0 +1,65 @@
+---
+---
+<div class="row publication-entry">
+  <div class="col-sm-2 publication-thumbnail">
+    {% if entry.abbr -%}
+      <span class="venue-label">{{ entry.abbr }}</span>
+    {%- endif %}
+    {% if entry.preview %}
+      <img
+        src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+        alt="Figure from {{ entry.title | escape }}"
+        class="preview"
+        width="200"
+        height="130"
+        loading="lazy"
+      >
+    {% endif %}
+  </div>
+  <div id="{{ entry.key }}" class="col-sm-10">
+    <div class="title">{{ entry.title }}</div>
+    <div class="author">
+      {%- for author in entry.author_array -%}
+        {%- if author.last == 'Davar' and author.first == 'Amirreza' -%}
+          <strong>
+            {{- author.first }}
+            {{ author.last -}}
+          </strong>
+        {%- else -%}
+          {{ author.first }}
+          {{ author.last }}
+        {%- endif -%}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    </div>
+    <div class="periodical">
+      {% if entry.journal -%}
+        <em>{{ entry.journal }}</em>, {{ entry.year -}}
+      {%- else -%}
+        {{- entry.howpublished }}, {{ entry.year -}}
+      {%- endif %}
+    </div>
+    <div class="publication-links">
+      {% if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi }}">Paper ↗</a>
+      {%- elsif entry.html -%}
+        <a href="{{ entry.html }}">Presentation record ↗</a>
+      {%- endif %}
+      {% if entry.arxiv -%}
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}">Preprint ↗</a>
+      {%- endif %}
+      {% if entry.code -%}
+        <a href="{{ entry.code }}">Code ↗</a>
+      {%- endif %}
+      {% if entry.website -%}
+        <a href="{{ entry.website }}">Project ↗</a>
+      {%- endif %}
+    </div>
+    {% if entry.bibtex_show %}
+      <details class="citation">
+        <summary>BibTeX</summary>
+        <pre>{{ entry.bibtex | escape }}</pre>
+      </details>
+    {% endif %}
+  </div>
+</div>

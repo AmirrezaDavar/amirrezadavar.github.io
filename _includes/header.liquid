@@ -1,0 +1,56 @@
+<header>
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" aria-label="Main navigation">
+    <div class="container">
+      {% unless page.url == '/' %}
+        <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="Amirreza Davar home">
+          <span class="brand-mark" aria-hidden="true">AD</span><span class="brand-name">Amirreza Davar</span>
+        </a>
+      {% endunless %}
+      <button
+        class="navbar-toggler collapsed navbar-toggler-main"
+        type="button"
+        data-nav-toggle="navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span><span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ '/' | relative_url }}"
+              {% if page.url == '/' %}
+                aria-current="page"
+              {% endif %}
+              >About</a
+            >
+          </li>
+          {% assign nav_pages = site.pages | where: 'nav', true | sort: 'nav_order' %}
+          {% for item in nav_pages %}
+            <li class="nav-item {% if page.url == item.url %}active{% endif %}">
+              <a
+                class="nav-link"
+                href="{{ item.url | relative_url }}"
+                {% if page.url == item.url %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{- item.title -}}
+              </a>
+            </li>
+          {% endfor %}
+          <li class="toggle-container">
+            <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+              <i class="fa-half-sun-moon" id="light-toggle-system" aria-hidden="true"></i>
+              <i class="fa-solid fa-moon" id="light-toggle-dark" aria-hidden="true"></i>
+              <i class="fa-solid fa-sun" id="light-toggle-light" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

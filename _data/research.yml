@@ -1,0 +1,9 @@
+- title: Learning from demonstration
+  short: Imitation learning and diffusion policies for robotic manipulation.
+  description: My work uses human demonstrations to learn manipulation behaviors, with diffusion policies connecting visual observations and robot state to actions.
+- title: Manipulation & touch
+  short: Deformable objects, delicate materials, and tactile sensing.
+  description: I study robotic interaction with irregular, deformable objects and tools, including custom grippers and tactile feedback for contact-aware control.
+- title: Simulation to real robots
+  short: Embodied AI and sim-to-real robotics.
+  description: My research connects simulated manipulation environments, teleoperation, and policy learning with real robotic systems.

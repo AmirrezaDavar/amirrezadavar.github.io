@@ -1,0 +1,12 @@
+_site/
+_site_project/
+vendor/
+node_modules/
+Gemfile.lock
+.al-folio-overrides.yml
+assets/
+docs/legacy-*
+artifacts/
+test-results/
+playwright-report/
+al-folio-upgrade-report.md
