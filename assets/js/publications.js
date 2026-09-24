@@ -28,5 +28,5 @@ document.querySelectorAll('[data-publications]').forEach((browser) => {
 
   buttons.forEach((button) => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
   filters.hidden = false;
-  applyFilter('selected');
+  applyFilter(new URLSearchParams(window.location.search).get('filter') === 'all' ? 'all' : 'selected');
 });

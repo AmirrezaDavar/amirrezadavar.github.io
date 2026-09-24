@@ -90,6 +90,10 @@ test("Selected shows exactly ChicGrasp and the review; All restores every entry"
   await page.keyboard.press("Enter");
   await expect(browser.locator(".publication-entry:visible")).toHaveCount(2);
   await page.goto("/");
-  await expect(page.locator(".home-publications .publication-entry")).toHaveCount(2);
+  await expect(page.locator(".home-publications .publication-entry:visible")).toHaveCount(2);
   await expect(page.locator(".home-publications #mahmoudi2024survey")).toBeVisible();
+  await page.getByRole("button", { name: "All", exact: true }).click();
+  await expect(page.locator(".home-publications .publication-entry:visible")).toHaveCount(4);
+  await page.getByRole("link", { name: "All publications" }).click();
+  await expect(page.locator("[data-publications] .publication-entry:visible")).toHaveCount(4);
 });

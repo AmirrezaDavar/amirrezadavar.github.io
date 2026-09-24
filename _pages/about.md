@@ -37,7 +37,9 @@ latest_posts:
 </section>
 
 <section class="academic-section" aria-labelledby="papers-heading">
-  <h2 id="papers-heading">Selected Publications</h2>
-  <div class="publications home-publications">{% bibliography --query @*[selected=true] %}</div>
-  <p class="all-publications"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+  <h2 id="papers-heading">Publications</h2>
+  <div class="home-publications">{% include publication-browser.liquid %}</div>
+  <p class="all-publications"><a href="{{ '/publications/' | relative_url }}?filter=all">All publications →</a></p>
 </section>
+
+<script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>

@@ -220,3 +220,6 @@ body.fixed-top-nav { padding-top: 54px; }
 @media (max-width: 600px) {
   .about-introduction .portrait-column { order: 0; justify-self: end; }
 }
+.home-publications h2#journal-articles { display: none; }
+.home-publications .publication-filters { margin-top: 0; }
+.home-publications .publication-count { margin-bottom: 25px; }
