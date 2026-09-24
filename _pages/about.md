@@ -41,4 +41,9 @@ latest_posts:
   <p class="all-publications"><a href="{{ '/publications/' | relative_url }}?filter=all">All publications →</a></p>
 </section>
 
+<section id="experience" class="academic-section" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">Experience</h2>
+  {% include experience.liquid %}
+</section>
+
 <script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>

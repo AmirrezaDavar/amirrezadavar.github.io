@@ -223,3 +223,17 @@ body.fixed-top-nav { padding-top: 54px; }
 .home-publications h2#journal-articles { display: none; }
 .home-publications .publication-filters { margin-top: 0; }
 .home-publications .publication-count { margin-bottom: 25px; }
+.experience-list { margin-top: 25px; }
+.experience-entry { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 28px; }
+.experience-logo { display: block; width: 100%; height: auto; margin-top: 5px; border-radius: 3px; }
+.experience-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; }
+.post .experience-heading h3 { margin: 0; font-size: 1.1rem; line-height: 1.5; font-weight: 600; }
+.experience-details p { margin: 5px 0 0; }
+.experience-heading .experience-dates { margin: 0; color: var(--global-text-color-light); white-space: nowrap; }
+.experience-role { font-weight: 400; }
+@media (max-width: 600px) {
+  .experience-entry { grid-template-columns: 100px minmax(0, 1fr); gap: 16px; }
+  .experience-heading { flex-direction: column; gap: 3px; }
+  .experience-dates { font-size: .9rem; }
+  .experience-logo { margin-top: 0; }
+}

@@ -9,6 +9,8 @@ Reviewed on 2026-09-24. These editorial notes are excluded from the deployed web
 - The CV preserves the prior public research experience descriptions without assigning an employment title or inferring the PhD start date. Education is stated only as PhD studies in progress.
 - Portrait: the public avatar returned by `https://api.github.com/users/AmirrezaDavar`, downloaded from `https://avatars.githubusercontent.com/u/125734691?v=4`. Saved unchanged in `assets/img/portrait.jpg`.
 - User-supplied design reference: classic al-folio homepage with biography, portrait, News, and Selected Publications. The latest user instruction places the portrait on the right, with blue accents.
+- The user confirmed the Purdue experience was an internship and requested a homepage Experience section. “Research internship” is a descriptive label; the date remains the previously published “Summer 2025.” No exact months, formal job title, location, or host have been inferred. The topic follows the existing public surgical robotics description.
+- Purdue logo: downloaded unchanged from [Purdue Brand Studio](https://www.purdue.edu/brand-studio/brand/logos-usage/), [official horizontal logo asset](https://www.purdue.edu/brand-studio/wp-content/uploads/2026/07/PU-H-logo-1024x512.jpg). Saved as `assets/img/purdue-university.jpg`.
 
 ## Publications
 

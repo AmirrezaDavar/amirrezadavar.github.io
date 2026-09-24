@@ -1,0 +1,29 @@
+<div class="experience-list">
+  {% for experience in site.data.experience %}
+    <article class="experience-entry">
+      <img
+        class="experience-logo"
+        src="{{ experience.logo | relative_url }}"
+        alt="{{ experience.institution }} logo"
+        width="1024"
+        height="512"
+        loading="lazy"
+      >
+      <div class="experience-details">
+        <div class="experience-heading">
+          <h3>
+            <a href="{{ experience.url }}">{{ experience.institution }}</a>
+          </h3>
+          <p class="experience-dates">{{ experience.dates }}</p>
+        </div>
+        <p class="experience-role">
+          <em>{{ experience.role }}</em>
+        </p>
+        {% if experience.host %}
+          <p>Host: {{ experience.host }}</p>
+        {% endif %}
+        <p class="experience-topic">Topic: {{ experience.topic }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>

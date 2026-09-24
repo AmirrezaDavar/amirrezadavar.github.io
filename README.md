@@ -2,7 +2,7 @@
 
 [Live website](https://amirrezadavar.github.io/) · [Repository](https://github.com/AmirrezaDavar/amirrezadavar.github.io)
 
-A personal academic website built with Jekyll and **al-folio**, pinned to `al_folio_core` 1.0.15. Includes About, Research, Publications, Projects, CV, News, and Contact. The homepage follows the supplied classic al-folio reference, with a portrait on the right, biography on the left, then News and Selected Publications.
+A personal academic website built with Jekyll and **al-folio**, pinned to `al_folio_core` 1.0.15. Includes About, Research, Publications, Projects, CV, News, and Contact. The homepage follows the supplied classic al-folio reference, with a portrait on the right, biography on the left, then News, Publications with Selected/All filters, and Experience.
 
 ## Local development
 
@@ -24,6 +24,7 @@ Open <http://127.0.0.1:4173/>. The site is served at the root, so `baseurl` is e
 | -------------------------------- | --------------------------------------------------------------------- |
 | Biography and homepage           | `_pages/about.md`                                                     |
 | Portrait                         | `assets/img/portrait.jpg`                                             |
+| Experience                       | `_data/experience.yml`, `_includes/experience.liquid`                 |
 | Public contact and profile links | `_data/profile.yml`, `_data/socials.yml`                              |
 | Research                         | `_pages/research.md`, `_data/research.yml`                            |
 | Publications                     | `_bibliography/papers.bib`                                            |
