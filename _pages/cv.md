@@ -28,7 +28,9 @@ Learning-based robotic manipulation in NVIDIA Isaac Lab, including UR10e simulat
 
 ### Surgical robotics research
 
-**Purdue University · Summer 2025**
+**Purdue University · May–August 2025**
+
+Research internship · Advisor: [Dr. Juan Wachs](https://engineering.purdue.edu/IE/people/ptProfile?resource_id=63004)
 
 Research on learning from long-horizon egocentric surgical video and exploring language and vision models for transferring human demonstrations toward robotic execution on the da Vinci Research Kit.
 

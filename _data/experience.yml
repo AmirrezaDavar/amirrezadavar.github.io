@@ -2,5 +2,7 @@
   url: https://www.purdue.edu/
   logo: /assets/img/purdue-university.jpg
   role: Research internship
-  dates: Summer 2025
+  dates: May–August 2025
+  advisor: Dr. Juan Wachs
+  advisor_url: https://engineering.purdue.edu/IE/people/ptProfile?resource_id=63004
   topic: Surgical robotics — learning from egocentric surgical video and transferring human demonstrations toward robotic execution.

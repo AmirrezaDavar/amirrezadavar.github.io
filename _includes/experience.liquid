@@ -19,8 +19,10 @@
         <p class="experience-role">
           <em>{{ experience.role }}</em>
         </p>
-        {% if experience.host %}
-          <p>Host: {{ experience.host }}</p>
+        {% if experience.advisor %}
+          <p>
+            Advisor: <a href="{{ experience.advisor_url }}">{{ experience.advisor }}</a>
+          </p>
         {% endif %}
         <p class="experience-topic">Topic: {{ experience.topic }}</p>
       </div>
