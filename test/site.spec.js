@@ -74,3 +74,22 @@ test("tablet navigation and demo playback", async ({ page }) => {
   });
   await expect.poll(() => page.locator("video").evaluate((video) => video.currentTime)).toBeGreaterThan(0);
 });
+
+test("Selected shows exactly ChicGrasp and the review; All restores every entry", async ({ page }) => {
+  await page.goto("/publications/");
+  const browser = page.locator("[data-publications]");
+  await expect(browser.locator(".publication-entry:visible")).toHaveCount(2);
+  await expect(browser.locator("#davar2026chicgrasp")).toBeVisible();
+  await expect(browser.locator("#mahmoudi2024survey")).toBeVisible();
+  await expect(browser.locator("#mahmoudi2026koopman")).toBeHidden();
+  await expect(browser.locator("#davar2025chicgrasp_poster")).toBeHidden();
+  await browser.getByRole("button", { name: "All", exact: true }).click();
+  await expect(browser.locator(".publication-entry:visible")).toHaveCount(4);
+  await expect(browser.getByRole("heading", { name: "Conference presentations" })).toBeVisible();
+  await browser.getByRole("button", { name: "Selected", exact: true }).focus();
+  await page.keyboard.press("Enter");
+  await expect(browser.locator(".publication-entry:visible")).toHaveCount(2);
+  await page.goto("/");
+  await expect(page.locator(".home-publications .publication-entry")).toHaveCount(2);
+  await expect(page.locator(".home-publications #mahmoudi2024survey")).toBeVisible();
+});

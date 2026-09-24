@@ -8,7 +8,7 @@ Reviewed on 2026-09-24. These editorial notes are excluded from the deployed web
 - Prior public website at Git commit `7334ab8`: project descriptions, public email `adavar@uark.edu`, GitHub, LinkedIn and Google Scholar URLs, and research experience (University of Arkansas and summer 2025 at Purdue). Archived HTML lives under `docs/legacy-*`.
 - The CV preserves the prior public research experience descriptions without assigning an employment title or inferring the PhD start date. Education is stated only as PhD studies in progress.
 - Portrait: the public avatar returned by `https://api.github.com/users/AmirrezaDavar`, downloaded from `https://avatars.githubusercontent.com/u/125734691?v=4`. Saved unchanged in `assets/img/portrait.jpg`.
-- User-supplied design reference: classic al-folio homepage with biography, portrait, News, and Selected Publications. User explicitly requested their portrait on the left and blue accents instead of pink.
+- User-supplied design reference: classic al-folio homepage with biography, portrait, News, and Selected Publications. The latest user instruction places the portrait on the right, with blue accents.
 
 ## Publications
 
@@ -24,3 +24,7 @@ Reviewed on 2026-09-24. These editorial notes are excluded from the deployed web
 - `assets/img/chicgrasp-still.jpg` and `assets/img/simulation-still.jpg` are preview frames extracted from the original videos. They are used on project pages, not as the homepage portrait.
 - No private repository content is published. The original broken link to a private simulation repository has been replaced with a working contact link.
 - No headshot was synthesized, no quantitative research claims were added, and no missing CV PDF was fabricated.
+
+## Selection
+
+The user explicitly selected exactly two entries: the first-author ChicGrasp journal paper and the imitation-learning review (included as an explicit exception to first authorship). The Selected filter and homepage show these two. All shows all listed journal articles and the ICRA poster.

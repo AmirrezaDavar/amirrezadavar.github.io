@@ -1,6 +1,6 @@
 ---
 ---
-<div class="row publication-entry">
+<div class="row publication-entry" data-selected="{% if entry.selected == 'true' %}true{% else %}false{% endif %}">
   <div class="col-sm-2 publication-thumbnail">
     {% if entry.abbr -%}
       <span class="venue-label">{{ entry.abbr }}</span>

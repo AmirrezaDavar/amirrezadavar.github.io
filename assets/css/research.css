@@ -171,7 +171,7 @@ body.fixed-top-nav { padding-top: 54px; }
 .post .post-header { margin-bottom: 18px; }
 .post .desc { color: var(--global-text-color); font-size: 1rem; margin-bottom: 0; }
 .post h2 { font-size: 2rem; font-weight: 300; letter-spacing: -.5px; margin-top: 30px; margin-bottom: 20px; }
-.about-introduction { display: grid; grid-template-columns: 270px 1fr; gap: 35px; align-items: start; }
+.about-introduction { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 35px; align-items: start; }
 .portrait { display: block; width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 7px #0003; }
 .portrait-socials { display: flex; gap: 19px; justify-content: center; align-items: center; padding: 14px 0 0; }
 .portrait-socials a { font-size: 1.6rem; line-height: 1.4; min-width: 25px; text-align: center; }
@@ -193,7 +193,7 @@ body.fixed-top-nav { padding-top: 54px; }
 .citation { font-size: .75rem; }
 .all-publications { font-size: .9rem; }
 @media (max-width: 760px) {
-  .about-introduction { grid-template-columns: 210px 1fr; gap: 25px; }
+  .about-introduction { grid-template-columns: minmax(0, 1fr) 210px; gap: 25px; }
   #navbar .navbar-toggler-main { margin-left: auto; }
   .portrait-socials { gap: 13px; }
 }
@@ -208,4 +208,15 @@ body.fixed-top-nav { padding-top: 54px; }
 .post p a:not(.primary-link), .news td a, footer a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 @media (max-width: 575px) {
   .publications .publication-entry { margin-left: 0; margin-right: 0; }
+}
+.publication-filters { display: flex; gap: 12px; margin: 26px 0 14px; }
+.publication-filters button { border: 1px solid var(--global-divider-color); border-radius: 999px; padding: 6px 23px; background: var(--site-soft); color: var(--global-text-color); font: inherit; font-weight: 400; }
+.publication-filters button[aria-pressed="true"] { border-color: var(--global-theme-color); background: var(--global-theme-color); color: var(--global-bg-color); }
+.publication-count { color: var(--global-text-color-light); font-size: .85rem; }
+[data-publications] [hidden] { display: none !important; }
+
+.about-introduction .biography { order: 1; }
+.about-introduction .portrait-column { order: 2; }
+@media (max-width: 600px) {
+  .about-introduction .portrait-column { order: 0; justify-self: end; }
 }
