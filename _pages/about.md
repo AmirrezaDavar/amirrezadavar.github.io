@@ -23,7 +23,7 @@ latest_posts:
     </div>
   </aside>
   <div class="biography">
-    <p>I am a PhD student in Mechanical Engineering at the <a href="https://www.uark.edu/">University of Arkansas</a>. My research focuses on robot learning and embodied AI for robotic manipulation.</p>
+    <p>I am a second-year PhD student in Mechanical Engineering at the <a class="university-affiliation" href="https://www.uark.edu/"><img class="affiliation-logo" src="{{ '/assets/img/university-of-arkansas.png' | relative_url }}" alt="" width="24" height="24">University of Arkansas</a>, advised by <a href="{{ site.data.profile.advisor.url }}">Professor {{ site.data.profile.advisor.name }}</a>. My research focuses on robot learning and embodied AI for robotic manipulation.</p>
     <p>I work on imitation learning, diffusion policies, deformable-object manipulation, tactile sensing, and sim-to-real robotics. My work connects human demonstrations, multimodal observations, policy learning, simulation, and real robotic systems.</p>
     <p>My projects include <a href="{{ '/projects/chicgrasp/' | relative_url }}">ChicGrasp</a>, an imitation-learning system with a custom dual-jaw gripper for delicate, irregular objects, and <a href="{{ '/projects/chicken-manipulation/' | relative_url }}">learning-based manipulation in NVIDIA Isaac Lab</a>. I also coauthored research on <a href="{{ '/projects/contact-aware/' | relative_url }}">tactile feedback and deformable tool control</a>.</p>
     <p>In summer 2025, I worked on surgical robotics research at Purdue University, exploring learning from egocentric surgical video and transferring human demonstrations toward robotic execution.</p>

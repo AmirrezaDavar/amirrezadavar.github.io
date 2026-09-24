@@ -1,6 +1,9 @@
 name: Amirreza Davar
 role: Mechanical Engineering PhD student
 institution: University of Arkansas
+advisor:
+  name: Dongyi Wang
+  url: https://engineering.uark.edu/bio-ag-engineering/faculty/uid/dongyiw/name/Dongyi%2BWang/
 email: adavar@uark.edu
 github: https://github.com/AmirrezaDavar
 scholar: https://scholar.google.com/citations?user=Ul1Pa84AAAAJ&hl=en

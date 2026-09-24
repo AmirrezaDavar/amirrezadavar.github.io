@@ -12,7 +12,9 @@ description: Academic background and research experience.
 ## Education
 
 **PhD studies in Mechanical Engineering**  
-University of Arkansas · In progress
+University of Arkansas · Second year, in progress
+
+Advisor: [Professor {{ site.data.profile.advisor.name }}]({{ site.data.profile.advisor.url }})
 
 ## Research interests
 
