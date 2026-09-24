@@ -32,7 +32,7 @@ jobs:
         env:
           JEKYLL_ENV: production
       - run: python3 scripts/check_site.py _site
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chrome
       - run: npm test
       - uses: actions/upload-pages-artifact@v4
         with:

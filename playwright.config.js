@@ -7,7 +7,7 @@ module.exports = defineConfig({
   reporter: "list",
   use: {
     baseURL: process.env.SITE_URL || "http://127.0.0.1:4173",
-    channel: process.env.CI ? undefined : "chrome",
+    channel: "chrome",
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
   },

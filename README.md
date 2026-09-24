@@ -49,7 +49,7 @@ bundle exec al-folio upgrade audit
 bundle exec al-folio upgrade overrides audit --fail-on-stale
 ```
 
-Browser tests use installed Google Chrome locally and Playwright Chromium in CI. Tests cover page rendering, mobile/tablet navigation, horizontal overflow, image loading, WCAG accessibility checks, keyboard-operated BibTeX, persistent dark mode, and video playback. Screenshots are generated in `artifacts/`; failed-test evidence goes to `test-results/`.
+Browser tests use Google Chrome locally and in CI so the original H.264/AAC research videos can be decoded. Tests cover page rendering, mobile/tablet navigation, horizontal overflow, image loading, WCAG accessibility checks, keyboard-operated BibTeX, persistent dark mode, and video playback. Screenshots are generated in `artifacts/`; failed-test evidence goes to `test-results/`.
 
 ## Deployment
 
